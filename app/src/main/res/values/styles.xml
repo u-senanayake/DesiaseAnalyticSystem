@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+    <style name="background">
+            <item name="android:background">@android:drawable/alert_dark_frame</item>
+            <item name="android:paddingTop">10dp</item>
+            <item name="android:paddingBottom">0dp</item>
+            <item name="android:paddingLeft">15dp</item>
+            <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="button_lgn">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">30dp</item>
+            <item name="android:textColor">#ffa164c8</item>
+            <item name="android:gravity">center</item>
+            <item name="android:shadowColor">#000000</item>
+            <item name="android:shadowRadius">0.9</item>
+            <item name="android:padding">10dip</item>
+
+    </style>
+
+    <style name="main_heding">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">30dp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">#ffa164c8</item>
+            <item name="android:gravity">center</item>
+            <item name="android:shadowColor">#000000</item>
+            <item name="android:shadowRadius">0.9</item>
+            <item name="android:padding">10dip</item>
+
+    </style>
+
+    <style name="other_txt">
+            <item name="android:textSize">20dp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">#ff8250f0</item>
+     </style>
+
+
+</resources>

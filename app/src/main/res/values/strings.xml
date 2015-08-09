@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--App name-->
+    <string name="app_name">DiseaseAnalytic</string>
+
+    <!--Activity names-->
+    <string name="title_activity_loging">Login</string>
+    <string name="title_activity_signup">Request an Account</string>
+    <string name="title_activity_maps">Main Window</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Disease Spinner items-->
+    <string-array name="spinner_disease">
+        <item>Dengue</item>
+        <item>Malaria</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+        <item>Item 7</item>
+        <item>Item 8</item>
+    </string-array>
+
+
+    <string name="buttonLogin">dsbjshgjfskj</string>
+
+</resources>
