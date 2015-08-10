@@ -41,16 +41,22 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/editLattitude"
                     android:hint="Lattitude"
-                    android:layout_weight="0.50" />
+                    android:layout_weight="0.50"
+                    android:enabled="true" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/editTextLongitude"
                     android:hint="Longitude"
-                    android:layout_weight="0.45" />
+                    android:layout_weight="0.45"
+                    android:enabled="true" />
             </LinearLayout>
-
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"></ProgressBar>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
