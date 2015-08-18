@@ -1,47 +1,61 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
     </style>
     <style name="background">
-            <item name="android:background">@android:drawable/alert_dark_frame</item>
-            <item name="android:paddingTop">10dp</item>
-            <item name="android:paddingBottom">0dp</item>
-            <item name="android:paddingLeft">15dp</item>
-            <item name="android:paddingRight">15dp</item>
-    </style>
 
-    <style name="button_lgn">
-            <item name="android:layout_width">fill_parent</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:textSize">30dp</item>
-            <item name="android:textColor">#ffa164c8</item>
-            <item name="android:gravity">center</item>
-            <item name="android:shadowColor">#000000</item>
-            <item name="android:shadowRadius">0.9</item>
-            <item name="android:padding">10dip</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:background">#34495e</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:dividerHeight">8dp</item>
+        <item name="android:divider">@android:color/darker_gray</item>
 
     </style>
 
-    <style name="main_heding">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:textSize">30dp</item>
-            <item name="android:textStyle">bold</item>
-            <item name="android:textColor">#ffa164c8</item>
-            <item name="android:gravity">center</item>
-            <item name="android:shadowColor">#000000</item>
-            <item name="android:shadowRadius">0.9</item>
-            <item name="android:padding">10dip</item>
-
+    <style name="button">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background"> @drawable/btn_style</item>
+        <item name="android:shadowColor">#A8A8A8</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
     <style name="other_txt">
-            <item name="android:textSize">20dp</item>
-            <item name="android:textStyle">bold</item>
-            <item name="android:textColor">#ff8250f0</item>
-     </style>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
 
+    <style name="editText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#FF4E565E</item>
+        <item name="android:textColorHint">#ffe0dcff</item>
+        <item name="android:height">48dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="editTextError">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:height">48dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
 
 </resources>

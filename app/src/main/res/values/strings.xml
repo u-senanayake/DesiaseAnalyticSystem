@@ -14,7 +14,7 @@
     <string name="action_settings">Settings</string>
 
     <!--Disease Spinner items-->
-    <string-array name="spinner_disease">
+    <string-array name="spinner">
         <item>Dengue</item>
         <item>Malaria</item>
         <item>Item 3</item>
@@ -27,5 +27,37 @@
 
 
     <string name="buttonLogin">dsbjshgjfskj</string>
+    <!--Sign up-->
+    <string name="edit_text_sign_up_name">Name</string>
+    <string name="edit_text1_sign_up_name">Name</string>
+    <string name="text_view_sign_up_e_mail">E-Mail</string>
+    <string name="edit_text_sign_up_e_mail">E-mail</string>
+    <string name="edit_text_sign_up_area">Your Area</string>
+    <string name="edit_text_sign_up_user_name">User Name</string>
+    <string name="text_view_sign_up_area">Your Area</string>
+    <string name="text_view_sign_up_user_name">User Name</string>
+    <string name="button_sign_up_request">Request</string>
+    <string name="text_view_name_erro">Enter Name</string>
+    <string name="text_view_email_erro">E-Mail</string>
+    <string name="text_view_area_erro">Area</string>
+    <string name="text_view_username_erro">User Name</string>
+
+    <!--Log in-->
+    <string name="edit_text_log_in_user_name">User name</string>
+    <string name="edit_text_log_in_password">Password</string>
+    <string name="text_view_log_in_user_name">User Name</string>
+    <string name="text_view_log_in_password">Password</string>
+    <string name="button_log_in_login">Login</string>
+    <string name="button_log_in_sign_up">Sign Up</string>
+
+    <!--Map-->
+    <string name="text_view_map_latitde">X</string>
+    <string name="edit_text_map_latitude">Lattitude</string>
+    <string name="text_view_map_longitude">Y</string>
+    <string name="edit_text_map_longitude">Longitude</string>
+    <string name="button_map_get">Get Location</string>
+    <string name="button_map_send">Send Location</string>
+    <string name="text_view_map_city">City</string>
+    <string name="edit_text_map_city">City</string>
 
 </resources>

@@ -4,15 +4,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.alumaworks.udayanga.diseaseanalytic.SignupActivity">
+    tools:context="com.alumaworks.udayanga.diseaseanalytic.SignupActivity"
+    style="@style/background">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+        style="@style/background">
 
         <TableLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:stretchColumns="1"
             >
             <LinearLayout
@@ -20,70 +22,134 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" android:paddingTop="25dp"
                 android:id="@+id/linearLayout">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Name"
-                    android:id="@+id/textView3" style="@style/other_txt"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/edit_text_sign_up_name"
+                        android:id="@+id/textViewName" style="@style/other_txt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_name_erro"
+                        android:id="@+id/textViewNameError"
+                        style="@style/editTextError" />
+                </LinearLayout>
+
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:inputType="textPersonName"
                     android:ems="10"
-                    android:id="@+id/editTextName" android:hint="Name"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="E-Mail"
-                    android:id="@+id/textView4" style="@style/other_txt"/>
+                    android:id="@+id/editTextName" android:hint="@string/edit_text1_sign_up_name"
+                    style="@style/editText" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/text_view_sign_up_e_mail"
+                        android:id="@+id/textViewEmail" style="@style/other_txt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_email_erro"
+                        android:id="@+id/textViewEmailErr"
+                        style="@style/editTextError" />
+                </LinearLayout>
+
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:inputType="textEmailAddress"
                     android:ems="10"
-                    android:id="@+id/editTextEmail" android:hint="E-mail"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Your Area"
-                    android:id="@+id/textView5" style="@style/other_txt"/>
+                    android:id="@+id/editTextEmail" android:hint="@string/edit_text_sign_up_e_mail"
+                    style="@style/editText" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/text_view_sign_up_area"
+                        android:id="@+id/textViewArea" style="@style/other_txt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_area_erro"
+                        android:id="@+id/textViewAreaErro"
+                        style="@style/editTextError" />
+                </LinearLayout>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPostalAddress"
                     android:ems="10"
-                    android:id="@+id/editTextArea" android:hint="Your Area" android:paddingBottom="20dp"
-                    android:layout_below="@+id/linearLayout"
-                    android:layout_alignParentStart="true" />
+                    android:id="@+id/editTextArea" android:hint="@string/edit_text_sign_up_area" android:paddingBottom="20dp"
+                    style="@style/editText" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="User Name"
-                    android:id="@+id/textView"
-                    style="@style/other_txt" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/text_view_sign_up_user_name"
+                        android:id="@+id/textViewUserName"
+                        style="@style/other_txt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_view_username_erro"
+                        android:id="@+id/textViewUserNameError"
+                        style="@style/editTextError" />
+                </LinearLayout>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editTextUserName"
-                    android:hint="User Name" />
+                    android:hint="@string/edit_text_sign_up_user_name"
+                    style="@style/editText" />
             </LinearLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Request an Account"
-                android:id="@+id/buttonSignUp"
-                android:layout_below="@+id/linearLayout"
-                android:layout_centerHorizontal="true"
-                style="@style/button_lgn"
-                android:onClick="onRegisterButtonClick" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_sign_up_request"
+                    android:id="@+id/buttonSignUp"
+                    style="@style/button"
+                    android:onClick="onRegisterButtonClick" />
+            </LinearLayout>
         </TableLayout>
     </ScrollView>
 </RelativeLayout>

@@ -47,19 +47,10 @@ public class LogingActivity extends ActionBarActivity {
 
         connection=isInternetConnected(getApplication());
         if(connection){
-
-            //make if user logged previosly,log automaticaly
-
-            boolean hasloggedinPreviously=sharedPreferences.getBoolean("hasloggedinPreviously",false);
-            String username=sharedPreferences.getString("username","dummyUsername");
-            if(hasloggedinPreviously){
-                Intent intent = new Intent(this, MapsActivity.class);
-                startActivity(intent);
-                finish();
-            }
+            Login();
         }
         else {
-            AlertDialog.Builder builder=new AlertDialog.Builder(LogingActivity.this);
+          AlertDialog.Builder builder=new AlertDialog.Builder(LogingActivity.this);
             builder.setMessage("Please enable data connection")
                     .setCancelable(false)
                     .setTitle("Data Connection Status")
@@ -70,13 +61,13 @@ public class LogingActivity extends ActionBarActivity {
                                             Settings.ACTION_WIRELESS_SETTINGS);
                                     startActivity(myIntent);
                                     dialog.cancel();
-
                                 }
                             })
-                    .setNegativeButton("Exit",
+                    .setNegativeButton("Cancel",
                             new DialogInterface.OnClickListener(){
                                 public void onClick(DialogInterface dialog,int id){
-                                    finish();
+                                    dialog.cancel();
+                                    Login();
                                 }
                             });
             AlertDialog alert=builder.create();
@@ -84,6 +75,7 @@ public class LogingActivity extends ActionBarActivity {
         }
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -150,6 +142,7 @@ public class LogingActivity extends ActionBarActivity {
 
         }
         else {
+
             progressBar.setVisibility(View.INVISIBLE);
             AlertDialog.Builder builder=new AlertDialog.Builder(LogingActivity.this);
             builder.setMessage("Please enable data connection")
@@ -168,7 +161,7 @@ public class LogingActivity extends ActionBarActivity {
                     .setNegativeButton("Cancel",
                             new DialogInterface.OnClickListener(){
                                 public void onClick(DialogInterface dialog,int id){
-                                    finish();
+                                    dialog.cancel();
                                 }
                             });
             AlertDialog alert=builder.create();
@@ -200,5 +193,14 @@ public class LogingActivity extends ActionBarActivity {
         }
         return false;
     }
+    private  void Login(){
+        boolean hasloggedinPreviously=sharedPreferences.getBoolean("hasloggedinPreviously",false);
+        String username=sharedPreferences.getString("username","dummyUsername");
+        if(hasloggedinPreviously){
+            Intent intent = new Intent(this, MapsActivity.class);
+            startActivity(intent);
+            finish();
+
+        }}
 
 }
